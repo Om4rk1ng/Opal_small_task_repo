@@ -75,6 +75,16 @@ public class ToolBoxMenu {
             System.out.println(celsius + "°C is equal to " + fahrenheit + "°F");
         }
 
+        public static void evenOrOdd() {
+            System.out.print("Enter a number: ");
+            int number = sc.nextInt();
+            if (number % 2 == 0) {
+                System.out.println(number + " is even.");
+            } else {
+                System.out.println(number + " is odd.");
+            }
+        }
+
         
 
         
