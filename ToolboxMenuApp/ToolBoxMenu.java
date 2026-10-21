@@ -148,7 +148,15 @@ public class ToolBoxMenu {
             }
         }
 
-        
+        public static void reverseNumber() {
+            System.out.print("Enter a number: ");
+            String number = sc.nextLine();
+            String reversed = new StringBuilder(number).reverse().toString();
+            int reversedNumber = Integer.parseInt(reversed);
+            System.out.println("Reversed number is: " + reversedNumber);
+        }
+
+       
         
 
 
