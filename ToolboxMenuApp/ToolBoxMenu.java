@@ -109,7 +109,7 @@ public class ToolBoxMenu {
         public static void factorial() {
             System.out.print("Enter a number: ");
             int number = sc.nextInt();
-            int factorial = 1;
+            long factorial = 1;
             for (int i = 1; i <= number; i++) {
                 factorial *= i;
             }
