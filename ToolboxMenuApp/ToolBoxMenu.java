@@ -63,7 +63,7 @@ public class ToolBoxMenu {
                     break;
                 case 0:
                     exit = true;
-                    System.out.println("Thank you for using the Toolbox Menu. Goodbye!");
+                    System.out.println("Goodbye!");
                     break;
                 default:
                     System.out.println("Invalid option. Please try again.");
