@@ -27,30 +27,39 @@ public class ToolBoxMenu {
                 case 1:
 
                     celsiusToFahrenheit();
+                    System.out.println("(Menu is Shown Again)");
                     break;
                 case 2:
                     evenOrOdd();
+                    System.out.println("(Menu is Shown Again)");
                     break;
                 case 3:
                     maxOfThree();
+                    System.out.println("(Menu is Shown Again)");
                     break;
                 case 4:
                     factorial();
+                    System.out.println("(Menu is Shown Again)");
                     break;
                 case 5:
                     multiplicationTable();
+                    System.out.println("(Menu is Shown Again)");
                     break;
                 case 6:
                     starTriangle();
+                    System.out.println("(Menu is Shown Again)");
                     break;
                 case 7:
                     isPrime();
+                    System.out.println("(Menu is Shown Again)");
                     break;
                 case 8:
                     reverseNumber();
+                    System.out.println("(Menu is Shown Again)");
                     break;
                 case 9:
                     numberPyramid();
+                    System.out.println("(Menu is Shown Again)");
                     break;
                 case 0:
                     exit = true;
