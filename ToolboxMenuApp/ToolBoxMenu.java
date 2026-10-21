@@ -97,5 +97,14 @@ public class ToolBoxMenu {
             System.out.println("The maximum of the three numbers is: " + max);
         }
 
+        public static void factorial() {
+            System.out.print("Enter a number: ");
+            int number = sc.nextInt();
+            int factorial = 1;
+            for (int i = 1; i <= number; i++) {
+                factorial *= i;
+            }
+            System.out.println("Factorial of " + number + " is: " + factorial);
+        }
         
 }
