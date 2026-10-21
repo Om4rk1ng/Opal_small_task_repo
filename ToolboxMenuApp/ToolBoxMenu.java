@@ -20,7 +20,7 @@ public class ToolBoxMenu {
             System.out.println("8. Reverse a number");
             System.out.println("9. Number pyramid");
             System.out.println("0.Exit");
-            System.out.println("Please select an option:");
+            System.out.println("Please enter a number between 0 and 9");
             int option = sc.nextInt();
 
             switch (option) {
