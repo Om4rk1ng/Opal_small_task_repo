@@ -19,7 +19,7 @@ public class ToolBoxMenu {
             System.out.println("7. Prime check");
             System.out.println("8. Reverse a number");
             System.out.println("9. Number pyramid");
-            System.out.print("0.Exit");
+            System.out.println("0.Exit");
             System.out.println("Please select an option:");
             int option = sc.nextInt();
 
