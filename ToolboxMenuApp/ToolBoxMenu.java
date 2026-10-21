@@ -106,5 +106,16 @@ public class ToolBoxMenu {
             }
             System.out.println("Factorial of " + number + " is: " + factorial);
         }
+
+        public static void multiplicationTable() {
+            System.out.print("Enter a number: ");
+            int number = sc.nextInt();
+            System.out.println("Multiplication table of " + number + ":");
+            for (int i = 1; i <= 10; i++) {
+                System.out.println(number + " x " + i + " = " + (number * i));
+            }
+        }
+
+        
         
 }
