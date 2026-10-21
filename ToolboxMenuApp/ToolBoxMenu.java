@@ -85,7 +85,17 @@ public class ToolBoxMenu {
             }
         }
 
-        
+        public static void maxOfThree() {
+            System.out.print("Enter first number: ");
+            int num1 = sc.nextInt();
+            System.out.print("Enter second number: ");
+            int num2 = sc.nextInt();
+            System.out.print("Enter third number: ");
+            int num3 = sc.nextInt();
+
+            int max = Math.max(num1, Math.max(num2, num3));
+            System.out.println("The maximum of the three numbers is: " + max);
+        }
 
         
 }
