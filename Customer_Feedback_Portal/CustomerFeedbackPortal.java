@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.classfile.instruction.SwitchCase;
 import java.util.Scanner;
 
 public class CustomerFeedbackPortal {
@@ -14,6 +13,11 @@ public class CustomerFeedbackPortal {
     public static int count = 0;
 
     public static void Addfeedback(String[] names, int[] ratings, String[] comments) throws IOException {
+
+        if (count >= names.length) {
+            System.out.println("Feedback storage is full!");
+            return;
+        }
 
         System.out.print("Enter name: ");
         String name = Sc.nextLine();
@@ -39,10 +43,16 @@ public class CustomerFeedbackPortal {
     }
 
     public static void Showall(String[] names, int[] ratings, String[] comments) throws IOException {
-        for (int i = 0; i < count; i++) {
-            System.out
-                    .println("name: " + names[i] + " Rating: " + " |" + ratings[i] + "| " + "Feedback: " + comments[i]);
+        if (count == 0) {
+            System.out.println("\nNo feedback available yet.\n");
+            return;
         }
+        System.out.println("\n--- ALL FEEDBACK ---");
+        for (int i = 0; i < count; i++) {
+            System.out.println(
+                    (i + 1) + ". Name: " + names[i] + " | Rating: |" + ratings[i] + "| | Feedback: " + comments[i]);
+        }
+        System.out.println();
     }
 
     public static void showAverage(int[] ratings) throws IOException {
@@ -69,7 +79,7 @@ public class CustomerFeedbackPortal {
         }
 
         System.out.print("Highest Rating: ");
-        
+
         for (int s = 0; s < highest; s++)
             System.out.print("*");
         System.out.println(" (" + highest + ")");
@@ -181,6 +191,7 @@ public class CustomerFeedbackPortal {
                     case 7:
                         saveFeedback(names, ratings, comments);
                         System.out.println("Exiting program. Goodbye!");
+                        exit = true;
                         break;
 
                     default:
