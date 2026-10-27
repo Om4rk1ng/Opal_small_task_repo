@@ -49,8 +49,7 @@ public class CustomerFeedbackPortal {
         }
         System.out.println("\n--- ALL FEEDBACK ---");
         for (int i = 0; i < count; i++) {
-            System.out.println(
-                    (i + 1) + ". Name: " + names[i] + " | Rating: |" + ratings[i] + "| | Feedback: " + comments[i]);
+            System.out.println(names[i] + "|" + ratings[i] + "|" + comments[i]);
         }
         System.out.println();
     }
@@ -165,31 +164,31 @@ public class CustomerFeedbackPortal {
                 System.out.println("6. Save to file");
                 System.out.println("7. Save and exit");
                 System.out.print("Choose: ");
-
                 int option = Sc.nextInt();
+                Sc.nextLine();
 
                 switch (option) {
                     case 1:
-                        Addfeedback(names, ratings, comments);
+                        Addfeedback(names,ratings,comments);
                         break;
                     case 2:
-                        Showall(names, ratings, comments);
+                        Showall(names,ratings,comments);
                         break;
                     case 3:
                         showAverage(ratings);
                         break;
                     case 4:
-                        searchByRating(names, ratings, comments);
+                        searchByRating(names,ratings,comments);
                         break;
                     case 5:
-                        deleteFeedback(names, ratings, comments);
+                        deleteFeedback(names,ratings,comments);
                         break;
                     case 6:
-                        saveFeedback(names, ratings, comments);
-                        loadFeedback(names, ratings, comments);
+                        saveFeedback(names,ratings,comments);
+                        loadFeedback(names,ratings,comments);
                         break;
                     case 7:
-                        saveFeedback(names, ratings, comments);
+                        saveFeedback(names,ratings,comments);
                         System.out.println("Exiting program. Goodbye!");
                         exit = true;
                         break;
@@ -203,7 +202,8 @@ public class CustomerFeedbackPortal {
             System.out.println("Something went wrong went saving content into the file or reading file content ");
         }
 
+        
         Sc.close();
-
     }
+    
 }
