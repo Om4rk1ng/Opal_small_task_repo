@@ -144,39 +144,38 @@ public class JavaQ {
             System.out.println();
         }
 
-        int n9=sc.nextInt();
+        int n9 = sc.nextInt();
         int currentOdd = 1;
-        
+
         if (n9 <= 0) {
             System.out.println("Please enter a positive integer greater than 0.");
-            
+
             return;
         }
-        
-        
+
         for (int u = 1; u <= n9; u++) {
             for (int j = 1; j <= u; j++) {
                 System.out.print(currentOdd + " ");
-                currentOdd += 2; 
+                currentOdd += 2;
             }
-            System.out.println(); 
+            System.out.println();
         }
 
-                int n10=sc.nextInt();
+        int n10 = sc.nextInt();
 
         if (n10 % 2 == 0) {
             System.out.println("Error: Please enter an odd number.");
             return;
         }
-        
+
         int mid = (n10 + 1) / 2;
-        
+
         for (int p = 1; p <= n10; p++) {
             for (int j = 1; j <= n10; j++) {
                 if (p == mid || j == mid) {
                     System.out.print("* ");
                 } else {
-                    System.out.print("  "); 
+                    System.out.print("  ");
                 }
             }
             System.out.println();
@@ -185,4 +184,3 @@ public class JavaQ {
         sc.close();
     }
 }
-
